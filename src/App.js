@@ -8,11 +8,19 @@ function App() {
     <AppContainer>
       <Typography variant="h2">Open Source Blog Using NextJS</Typography>
       <Link href="https://demo.opensourceblog.dev">
-        Check it out <ArrowRightAltIcon />
+        View a demo <StyledArrow />
+      </Link>
+      <Link href="https://github.com/Jaked222/nextreactblog">
+        Get the code
+        <StyledArrow />
       </Link>
     </AppContainer>
   );
 }
+
+const StyledArrow = styled(ArrowRightAltIcon)`
+  margin-left: 3px;
+`;
 
 const Link = styled.a`
   color: #daa520;
@@ -21,7 +29,7 @@ const Link = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 20px;
 `;
 
 const AppContainer = styled.div`
